@@ -1,0 +1,226 @@
+/* Custom styles beyond Tailwind */
+
+/* Animation classes */
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom hover effects */
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.03);
+}
+
+/* Custom gradient overlays for images */
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    border-radius: inherit;
+}
+
+.image-overlay * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF9F1C;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF4A4A;
+}
+
+/* Custom focus styles for accessibility */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: 3px solid rgba(255, 159, 28, 0.5);
+    outline-offset: 2px;
+}
+
+/* Tennis ball animation for loading elements */
+.tennis-ball-loading {
+    width: 40px;
+    height: 40px;
+    background: #bada55;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 1s infinite alternate;
+    margin: 20px auto;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-20px) rotate(360deg);
+    }
+}
+
+/* Glowing effect for important buttons */
+.glow-on-hover:hover {
+    box-shadow: 0 0 15px rgba(255, 74, 74, 0.7);
+}
+
+/* Custom styles for the image gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 16px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Custom styles for event calendar */
+.calendar-day {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.calendar-day:hover {
+    background-color: #FF9F1C;
+    color: white;
+}
+
+.calendar-day.has-event {
+    background-color: #FF4A4A;
+    color: white;
+    font-weight: bold;
+}
+
+/* ================= Mobile Navbar Enhancements ================ */
+/* Hamburger button lines */
+.hamburger {
+    position: relative;
+    width: 28px;
+    height: 20px;
+    display: inline-block;
+}
+.hamburger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #1A202C; /* dark */
+    border-radius: 2px;
+    transition: transform .45s cubic-bezier(.68,-0.55,.27,1.55), top .3s ease, opacity .3s ease, background .3s ease;
+}
+.dark .hamburger span { background:#fff; }
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.hamburger span:nth-child(3) { top: 100%; transform: translateY(-100%); }
+.hamburger.active span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; transform: translateY(-50%) scaleX(0); }
+.hamburger.active span:nth-child(3) { top: 50%; transform: translateY(-50%) rotate(-45deg); }
+
+/* Mobile menu panel animation */
+#mobile-menu-panel {
+    transform-origin: top center;
+    transform: translateY(-12px) scale(.96);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s ease, transform .5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+#mobile-menu-panel.open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* Ensure panel & overlay disabled on desktop (md and up) */
+@media (min-width: 768px) {
+    #mobile-menu-panel, #mobile-menu-overlay { display: none !important; }
+    body.mobile-menu-open { overflow: auto; }
+}
+
+/* Backdrop overlay */
+#mobile-menu-overlay {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s ease;
+}
+#mobile-menu-overlay.show { opacity: 1; pointer-events: auto; }
+
+/* Stagger for links */
+#mobile-menu-panel .mobile-link { opacity:0; transform: translateY(4px); }
+#mobile-menu-panel.open .mobile-link { animation: menuLinkFade .5s forwards; }
+#mobile-menu-panel.open .mobile-link:nth-child(1){ animation-delay:.05s; }
+#mobile-menu-panel.open .mobile-link:nth-child(2){ animation-delay:.1s; }
+#mobile-menu-panel.open .mobile-link:nth-child(3){ animation-delay:.15s; }
+#mobile-menu-panel.open .mobile-link:nth-child(4){ animation-delay:.2s; }
+#mobile-menu-panel.open .mobile-link:nth-child(5){ animation-delay:.25s; }
+#mobile-menu-panel.open .mobile-link:nth-child(6){ animation-delay:.3s; }
+
+@keyframes menuLinkFade {
+    from { opacity:0; transform: translateY(4px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+/* Prevent body scroll when mobile menu open */
+body.mobile-menu-open { overflow:hidden; }

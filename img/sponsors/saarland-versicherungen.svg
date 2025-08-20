@@ -1,0 +1,12 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <text x="30" y="110" font-family="Arial" font-weight="bold" font-size="90" fill="#0046BE">SAARLAND</text>
+    <text x="30" y="200" font-family="Arial" font-weight="bold" font-size="90" fill="#0046BE">Versicherungen</text>
+    <rect x="580" y="50" width="80" height="100" fill="#0046BE" rx="5" />
+    <path d="M550,100 q5,-20 20,-25 q15,-5 25,15 q5,15 -5,25 q-10,10 -25,0 q-10,-10 -15,-15" fill="white" stroke="#0046BE" stroke-width="3" />
+    <line x1="30" y1="30" x2="580" y2="30" stroke="#0046BE" stroke-width="5" />
+    <line x1="30" y1="250" x2="580" y2="250" stroke="#0046BE" stroke-width="5" />
+    <text x="185" y="290" font-family="Arial" font-size="40" fill="#0046BE">Finanzgruppe</text>
+    <rect x="150" y="270" width="25" height="25" fill="#0046BE" />
+  </g>
+</svg>

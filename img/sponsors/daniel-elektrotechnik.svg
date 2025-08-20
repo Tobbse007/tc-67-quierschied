@@ -1,0 +1,9 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <text x="15" y="150" font-family="Arial" font-weight="bold" font-size="125" fill="#9A9A9A">daniel</text>
+    <text x="15" y="250" font-family="Arial" font-weight="bold" font-size="75" fill="#4D4D4D">Elektrotechnik</text>
+    <circle cx="470" cy="75" r="40" fill="none" stroke="#4D4D4D" stroke-width="6" />
+    <path d="M470 75 a1,1 0 0,1 0,-40 a1,1 0 0,1 0,40" fill="none" stroke="#4D4D4D" stroke-width="6" />
+    <path d="M510 75 l20,0 l-15,-15 l15,15 l-15,15" fill="#FF0000" stroke="#FF0000" stroke-width="3" />
+  </g>
+</svg>

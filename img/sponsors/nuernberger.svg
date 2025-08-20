@@ -1,0 +1,10 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <circle cx="90" cy="90" r="85" fill="#003B71" />
+    <path d="M90,30 l-45,45 h30 v50 l-30,-30 l-30,30 h100 v-50 h30 z" fill="white" />
+    <text x="200" y="70" font-family="Arial" font-weight="bold" font-size="60" fill="#003B71">NÜRNBERGER</text>
+    <text x="200" y="140" font-family="Arial" font-weight="bold" font-size="60" fill="#003B71">VERSICHERUNG</text>
+    <text x="180" y="210" font-family="Arial" font-size="45" fill="#003B71">Agenturverbund</text>
+    <text x="180" y="270" font-family="Arial" font-size="45" fill="#003B71">Faust und Kollegen</text>
+  </g>
+</svg>

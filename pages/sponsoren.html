@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsoren & Partner - TC 67 Quierschied</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#FF6B35',       // Orange-red
+                        'secondary': '#FF9F1C',     // Bright orange
+                        'accent': '#4361EE',        // Energetic blue
+                        'light': '#F7F9FC',         // Light background
+                        'dark': '#1A202C',          // Dark text
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body class="font-body text-dark bg-light">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md border-b border-gray-100">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="flex items-center group">
+                        <svg class="w-8 h-8 mr-3 text-primary group-hover:text-secondary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.75 7.76c1.85-1.83 4.59-2.11 6.16-.55s1.35 4.29-.5 6.12c-1.58 1.57-3.84 1.98-5.48 1.14l-5.28 5.27-.71-.71 5.28-5.28c-.84-1.62-.42-3.9 1.14-5.48a3.87 3.87 0 012.39-1.01zm4.77.71c-1.14-1.14-3.1-.93-4.36.34-1.25 1.26-1.46 3.23-.32 4.36 1.14 1.14 3.1.93 4.36-.33 1.26-1.26 1.46-3.23.32-4.37z"/>
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="text-xl font-bold font-heading text-primary leading-tight">TC 67 Quierschied</span>
+                            <span class="text-xs text-gray-500 font-heading -mt-1">Tennisclub mit Tradition</span>
+                        </div>
+                    </a>
+                </div>                <!-- Navigation - Desktop -->                
+                    <nav class="hidden md:flex items-center space-x-0 lg:space-x-1">
+                        <a href="../index.html" class="relative inline-block font-heading font-medium text-dark py-2 px-2 focus:outline-none after:content-[''] after:absolute after:bottom-1.5 after:left-2 after:right-2 after:h-0.5 after:bg-primary after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300 after:rounded-full">Home</a>
+                        <a href="news.html" class="relative inline-block font-heading font-medium text-dark py-2 px-2 focus:outline-none after:content-[''] after:absolute after:bottom-1.5 after:left-2 after:right-2 after:h-0.5 after:bg-primary after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300 after:rounded-full">News & Events</a>
+                        <a href="anlage.html" class="relative inline-block font-heading font-medium text-dark py-2 px-2 focus:outline-none after:content-[''] after:absolute after:bottom-1.5 after:left-2 after:right-2 after:h-0.5 after:bg-primary after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300 after:rounded-full">Unsere Anlage</a>
+                        <a href="sponsoren.html" class="relative inline-block font-heading font-bold text-primary py-2 px-2 focus:outline-none after:content-[''] after:absolute after:bottom-1.5 after:left-2 after:right-2 after:h-0.5 after:bg-primary after:scale-x-100 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300 after:rounded-full">Sponsoren</a>
+                        <a href="kontakt.html" class="relative inline-block font-heading font-medium text-dark py-2 px-2 focus:outline-none after:content-[''] after:absolute after:bottom-1.5 after:left-2 after:right-2 after:h-0.5 after:bg-primary after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300 after:rounded-full">Kontakt</a>
+                    </nav>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="buchung.html" class="bg-primary hover:bg-secondary text-white font-semibold py-2.5 px-6 rounded-md transition-all duration-300 shadow hover:shadow-lg hover:shadow-primary/20 flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        Platz buchen
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-button" class="text-dark hover:text-primary focus:outline-none focus:text-primary bg-gray-100 p-2 rounded-lg hover:bg-gray-200 transition-colors duration-200">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu placeholder -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="../index.html" class="mobile-link">Home</a>
+                <a href="news.html" class="mobile-link">News & Events</a>
+                <a href="anlage.html" class="mobile-link">Unsere Anlage</a>
+                <a href="sponsoren.html" class="mobile-link">Sponsoren</a>
+                <a href="kontakt.html" class="mobile-link">Kontakt</a>
+                <a href="buchung.html" class="mobile-link">Platz buchen</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="bg-gradient-to-r from-primary to-secondary py-16 md:py-20">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold font-heading text-white mb-4">Sponsoren & Partner</h1>
+            <p class="text-xl text-white/90 max-w-3xl">Starke Partner an unserer Seite für einen starken Verein</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-heading mb-6 text-center">Unsere Sponsoren</h2>
+                <p class="text-lg text-gray-600">
+                    Der TC 67 Quierschied dankt seinen Sponsoren und Partnern herzlich für ihre Unterstützung. Ihre finanzielle und materielle Hilfe ist ein wichtiger Beitrag für die Aufrechterhaltung und Weiterentwicklung unseres Vereins und trägt maßgeblich zum Erhalt unserer hochwertigen Tennisanlage bei.
+                </p>
+                <p class="text-lg text-gray-600 mt-4">
+                    Durch das Engagement unserer Partner können wir unserem Nachwuchs eine qualitativ hochwertige Ausbildung ermöglichen und unseren Mitgliedern attraktive Angebote bieten.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <!-- Corpus Vitalis -->
+                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="../img/sponsors/corpus-vitalis.svg" alt="Corpus Vitalis - Praxis für Physiotherapie" class="h-32 w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold font-heading mb-4 text-center">Corpus Vitalis</h3>
+                    <p class="text-gray-600 mb-6">Die Praxis für Physiotherapie Corpus Vitalis ist seit Jahren ein wichtiger Partner für die Gesundheit unserer Spieler. Mit individuellen Therapiekonzepten unterstützt das Team unsere Mitglieder bei der Rehabilitation und Prävention.</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="text-accent hover:text-primary transition-colors duration-300 font-medium">Website besuchen →</a>
+                    </div>
+                </div>
+
+                <!-- Daniel Elektrotechnik -->
+                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="../img/sponsors/daniel-elektrotechnik.svg" alt="Daniel Elektrotechnik" class="h-32 w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold font-heading mb-4 text-center">Daniel Elektrotechnik</h3>
+                    <p class="text-gray-600 mb-6">Mit Know-how und technischer Expertise sorgt Daniel Elektrotechnik für die zuverlässige Elektrik auf unserer Anlage. Als lokaler Partner unterstützt das Unternehmen den Verein mit Qualitätsarbeit und Engagement.</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="text-accent hover:text-primary transition-colors duration-300 font-medium">Website besuchen →</a>
+                    </div>
+                </div>
+
+                <!-- Nürnberger Versicherung -->
+                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="../img/sponsors/nuernberger.svg" alt="Nürnberger Versicherung" class="h-32 w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold font-heading mb-4 text-center">Nürnberger Versicherung</h3>
+                    <p class="text-gray-600 mb-6">Der Agenturverbund Faust und Kollegen der Nürnberger Versicherung begleitet unseren Verein als zuverlässiger Partner und sorgt dafür, dass unsere Mitglieder in Versicherungsfragen stets bestens beraten sind.</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="text-accent hover:text-primary transition-colors duration-300 font-medium">Website besuchen →</a>
+                    </div>
+                </div>
+
+                <!-- Jost+Pilger -->
+                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="../img/sponsors/jost-pilger.svg" alt="Autopartner Jost+Pilger GmbH" class="h-32 w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold font-heading mb-4 text-center">Autopartner Jost+Pilger</h3>
+                    <p class="text-gray-600 mb-6">Als regionaler Autopartner unterstützt Jost+Pilger unseren Verein seit Jahren. Das Familienunternehmen steht für Qualität und Zuverlässigkeit und ist ein wichtiger Teil unserer Vereinsfamilie.</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="text-accent hover:text-primary transition-colors duration-300 font-medium">Website besuchen →</a>
+                    </div>
+                </div>
+
+                <!-- Saarland Versicherungen -->
+                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="../img/sponsors/saarland-versicherungen.svg" alt="Saarland Versicherungen" class="h-32 w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold font-heading mb-4 text-center">Saarland Versicherungen</h3>
+                    <p class="text-gray-600 mb-6">Als regionale Versicherung ist die Saarland Versicherungen Finanzgruppe ein starker Partner an unserer Seite, der uns bei zahlreichen Projekten und Turnieren unterstützt und einen wichtigen Beitrag zur Förderung des Breitensports leistet.</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="text-accent hover:text-primary transition-colors duration-300 font-medium">Website besuchen →</a>
+                    </div>
+                </div>
+
+                <!-- Silberpfeil -->
+                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="../img/sponsors/silberpfeil.svg" alt="Silberpfeil Energy Drink" class="h-32 w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold font-heading mb-4 text-center">Silberpfeil Energy Drink</h3>
+                    <p class="text-gray-600 mb-6">Mit seinem Energy Drink sorgt Silberpfeil dafür, dass unsere Spieler auch in langen Matches die nötige Energie haben. Als Sponsor bei Turnieren und Veranstaltungen trägt die Marke zur positiven Atmosphäre bei.</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="text-accent hover:text-primary transition-colors duration-300 font-medium">Website besuchen →</a>
+                    </div>
+                </div>
+
+                <!-- Heinrich Kalmes -->
+                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 md:col-span-2">
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="../img/sponsors/heinrich-kalmes.svg" alt="Heinrich Kalmes GmbH" class="h-32 w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold font-heading mb-4 text-center">Heinrich Kalmes GmbH</h3>
+                    <p class="text-gray-600 mb-6 max-w-xl mx-auto">Die Heinrich Kalmes GmbH ist ein langjähriger lokaler Partner unseres Vereins. Mit handwerklichem Können und Zuverlässigkeit unterstützt das Unternehmen unseren Club bei verschiedenen Projekten und Infrastrukturmaßnahmen.</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="text-accent hover:text-primary transition-colors duration-300 font-medium">Website besuchen →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Become a Sponsor Section -->
+            <div class="bg-gradient-to-r from-accent to-primary p-12 rounded-2xl text-white">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold font-heading mb-6">Werden Sie Sponsor</h2>
+                    <p class="text-xl mb-8">Unterstützen Sie unseren Tennisclub und profitieren Sie von einer starken lokalen Präsenz und Netzwerk.</p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="#" class="bg-white text-primary hover:bg-light hover:text-secondary font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg">
+                            Sponsor-Informationen
+                        </a>
+                        <a href="kontakt.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                            Kontakt aufnehmen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Club Info -->
+                <div>
+                    <h3 class="text-xl font-bold font-heading mb-4">TC 67 Quierschied</h3>
+                    <p class="mb-4 text-gray-400">Ein lebendiger Tennisverein mit Tradition und Zukunft im Herzen des Saarlandes.</p>
+                    
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-primary transition duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-primary transition duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Erstellt von VereinsWeb Box -->
+                    <div class="relative bg-gradient-to-br from-primary via-secondary to-primary/80 rounded-xl p-4 mt-4 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/10 max-w-xs">
+                        <!-- Glanz-Effekt -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent rounded-xl"></div>
+                        
+                        <div class="relative z-10">
+                            <p class="text-sm text-white/70 font-medium tracking-wide uppercase mb-2">Website erstellt von</p>
+                            <a href="https://vereins-web.de" target="_blank" class="group block hover:scale-105 transition-transform duration-200">
+                                <span class="text-white font-bold text-xl tracking-tight">Vereins</span><span class="text-yellow-200 font-bold text-2xl">Web</span>
+                                <svg class="inline w-4 h-4 ml-1 text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div>
+                    <h3 class="text-xl font-bold font-heading mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-secondary transition">Home</a></li>
+                        <li><a href="news.html" class="hover:text-secondary transition">News & Events</a></li>
+                        <li><a href="anlage.html" class="hover:text-secondary transition">Unsere Anlage</a></li>
+                        <li><a href="sponsoren.html" class="hover:text-secondary transition">Sponsoren</a></li>
+                        <li><a href="kontakt.html" class="hover:text-secondary transition">Kontakt</a></li>
+                        <li><a href="buchung.html" class="hover:text-secondary transition">Platz buchen</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-bold font-heading mb-4">Kontakt</h3>
+                    <address class="not-italic text-gray-400">
+                        <p class="mb-2">TC 67 Quierschied e.V.</p>
+                        <p class="mb-2">Zum Tennisplatz 1</p>
+                        <p class="mb-4">66287 Quierschied</p>
+                        <p class="mb-2 flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            +49 (0) 6897 / 12345
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            info@tc67-quierschied.de
+                        </p>
+                    </address>
+                </div>
+                
+                <!-- Opening Hours -->
+                <div>
+                    <h3 class="text-xl font-bold font-heading mb-4">Öffnungszeiten</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p class="flex justify-between"><span>Tennis-Anlage</span> <span>täglich 08:00 - 22:00</span></p>
+                        <p class="flex justify-between"><span>Clubhaus (Sommer)</span> <span>täglich 12:00 - 22:00</span></p>
+                        <p class="flex justify-between"><span>Clubhaus (Winter)</span> <span>siehe Aushang</span></p>
+                        <p class="mt-4 text-sm">Sonderöffnungszeiten bei Veranstaltungen und Turnieren möglich.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">&copy; <span class="current-year">2025</span> TC 67 Quierschied e.V. Alle Rechte vorbehalten.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-primary text-sm transition duration-200">Impressum</a>
+                        <a href="#" class="text-gray-500 hover:text-primary text-sm transition duration-200">Datenschutz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

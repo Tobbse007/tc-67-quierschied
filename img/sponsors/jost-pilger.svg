@@ -1,0 +1,11 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M50,50 a50,50 0 0,0 0,100 v-30 a20,20 0 0,1 0,-40" fill="#FF0000" />
+    <rect x="50" y="50" width="50" height="100" fill="#1A1A1A" />
+    <text x="150" y="100" font-family="Arial" font-weight="bold" font-size="45" fill="#1A1A1A">AUTOPARTNER</text>
+    <text x="150" y="150" font-family="Arial" font-weight="bold" font-size="65" fill="#1A1A1A">JOST+PILGER</text>
+    <text x="150" y="200" font-family="Arial" font-weight="normal" font-size="30" fill="#9A9A9A">GMBH</text>
+    <line x1="150" y1="220" x2="480" y2="220" stroke="#1A1A1A" stroke-width="2" />
+    <text x="200" y="250" font-family="Arial" font-size="30" fill="#1A1A1A">AUTOS • SERVICE • TECHNIK</text>
+  </g>
+</svg>

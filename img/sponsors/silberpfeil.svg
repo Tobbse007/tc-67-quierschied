@@ -1,0 +1,8 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <text x="10" y="100" font-family="Arial" font-weight="bold" font-size="90" style="font-style: italic;" fill="#000000">SILBER</text>
+    <text x="10" y="200" font-family="Arial" font-weight="bold" font-size="120" style="font-style: italic;" fill="#000000">PFEIL</text>
+    <text x="430" y="150" font-family="Arial" font-weight="normal" font-size="35" fill="#000000">ENERGY</text>
+    <text x="430" y="200" font-family="Arial" font-weight="normal" font-size="35" fill="#000000">DRINK</text>
+  </g>
+</svg>
